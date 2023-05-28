@@ -1,0 +1,51 @@
+// $font:16px;
+@import "partialcss";
+
+.hello{
+    font-size: $font*2;
+}
+.gallery{
+    border: 2px solid red;
+}
+// mixin and include
+@mixin center-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery{
+    @include center-item();
+}
+
+// ..........Nesting........
+ .gallery{
+    .image{
+        img{
+            height: 200px;
+        }
+    }
+ } 
+
+// .........Nesting with pseudo class or elements 
+.gallery{
+    .image{
+        img{
+            &:hover{
+                height: 300px;
+            }
+        }
+    }
+}
+@mixin font-size($size){
+    font-size: $size;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.hello3{
+    @include font-size(30px)
+}
+.hello4{
+    @include font-size(25px)
+}

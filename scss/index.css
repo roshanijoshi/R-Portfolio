@@ -1,0 +1,35 @@
+.hello {
+  font-size: 32px;
+}
+
+.gallery {
+  border: 2px solid red;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery .image img {
+  height: 200px;
+}
+
+.gallery .image img:hover {
+  height: 300px;
+}
+
+.hello3 {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hello4 {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=index.css.map */
